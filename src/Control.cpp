@@ -279,6 +279,10 @@ Uint8 joystick;
 					KeyOnKeyboardPressedByUser = '>';
 					break;
 
+				case SDLK_PERIOD:
+					KeyOnKeyboardPressedByUser = '.';
+					break;
+
 				case SDLK_SPACE:
 				KeyOnKeyboardPressedByUser = ' ';
 				break;
@@ -289,7 +293,7 @@ Uint8 joystick;
 	}
 
 //------------------------------------------
-	if ( keystates[ SDLK_UP ]    )
+	if ( keystates[ SDLK_w ]    )
 	{
 		if (JoystickUPActionTaken[Keyboard] == false)  JoystickDirection[Keyboard] = UP;
 		JoystickUPActionTaken[Keyboard] = true;
@@ -299,27 +303,27 @@ Uint8 joystick;
 
 	if (SingleMovementForJoystick == false)
 	{
-		if ( keystates[ SDLK_DOWN ]  )  JoystickDirection[Keyboard] = DOWN;
-		else if ( keystates[ SDLK_LEFT ]  )  JoystickDirection[Keyboard] = LEFT;
-		else if ( keystates[ SDLK_RIGHT ] )  JoystickDirection[Keyboard] = RIGHT;
+		if ( keystates[ SDLK_s ]  )  JoystickDirection[Keyboard] = DOWN;
+		else if ( keystates[ SDLK_q ]  )  JoystickDirection[Keyboard] = LEFT;
+		else if ( keystates[ SDLK_e ] )  JoystickDirection[Keyboard] = RIGHT;
 	}
 	else
 	{
-		if ( keystates[ SDLK_DOWN ]    )
+		if ( keystates[ SDLK_s ]    )
 		{
 			if (JoystickDOWNActionTaken[Keyboard] == false)  JoystickDirection[Keyboard] = DOWN;
 			JoystickDOWNActionTaken[Keyboard] = true;
 		}
 		else  JoystickDOWNActionTaken[Keyboard] = false;
 
-		if ( keystates[ SDLK_LEFT ]    )
+		if ( keystates[ SDLK_q ]    )
 		{
 			if (JoystickLEFTActionTaken[Keyboard] == false)  JoystickDirection[Keyboard] = LEFT;
 			JoystickLEFTActionTaken[Keyboard] = true;
 		}
 		else  JoystickLEFTActionTaken[Keyboard] = false;
 
-		if ( keystates[ SDLK_RIGHT ]    )
+		if ( keystates[ SDLK_e ]    )
 		{
 			if (JoystickRIGHTActionTaken[Keyboard] == false)  JoystickDirection[Keyboard] = RIGHT;
 			JoystickRIGHTActionTaken[Keyboard] = true;
@@ -329,14 +333,14 @@ Uint8 joystick;
 
 	if (game->GameScreen != NewHighScoreNameInputScreen)
 	{
-		if ( keystates[ SDLK_z ] )
+		if ( keystates[ SDLK_o ] )
 		{
 			if (JoystickButton1ActionTaken[Keyboard] == false)  JoystickButton1[Keyboard] = ON;
 			JoystickButton1ActionTaken[Keyboard] = true;
 		}
 		else  JoystickButton1ActionTaken[Keyboard] = false;
 
-		if ( keystates[ SDLK_x ] )
+		if ( keystates[ SDLK_p ] )
 		{
 			if (JoystickButton2ActionTaken[Keyboard] == false)  JoystickButton2[Keyboard] = ON;
 			JoystickButton2ActionTaken[Keyboard] = true;

@@ -838,7 +838,7 @@ Uint16 tileScreenY;
 
 		visuals->DrawTextOnScreenBuffer(1,"_______________________________", 255, 255, 255, 0, 0, 210, TextCenterX);
 		visuals->DrawTextOnScreenBuffer(1,"SELECT IN GAME MUSIC:", 255, 255, 0, 0, 0, 270, TextCenterX);
-		visuals->DrawTextOnScreenBuffer(1,"Press [LEFT] and [RIGHT] to change", 230, 230, 230, 0, 0, 330, TextCenterX);
+		visuals->DrawTextOnScreenBuffer(1,"Press [Q] and [E] to change", 230, 230, 230, 0, 0, 330, TextCenterX);
 		visuals->DrawTextOnScreenBuffer(1,"<=", 255, 255, 0, 0, 0, 390, TextLeftX);
 		visuals->DrawTextOnScreenBuffer(1,"=>", 255, 255, 0, 0, 0, 390, TextRightX);
 
@@ -853,7 +853,7 @@ Uint16 tileScreenY;
 		else if (audio->CurrentlySelectedMusicTrack == 8)  visuals->DrawTextOnScreenBuffer(1,"Bonus Track #9", 255, 255, 255, 0, 0, 390, TextCenterX);
 		else if (audio->CurrentlySelectedMusicTrack == 9)  visuals->DrawTextOnScreenBuffer(1,"Bonus Track #10", 255, 255, 255, 0, 0, 390, TextCenterX);
 
-		visuals->DrawTextOnScreenBuffer(1,"Press [Z] or [X] to START!", 230, 230, 230, 0, 0, 450, TextCenterX);
+		visuals->DrawTextOnScreenBuffer(1,"Press [O] or [P] to START!", 230, 230, 230, 0, 0, 450, TextCenterX);
 		visuals->DrawTextOnScreenBuffer(1,"_______________________________", 255, 255, 255, 0, 0, 480, TextCenterX);
 
 		SDL_Flip(visuals->Screen);

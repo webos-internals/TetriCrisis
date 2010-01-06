@@ -50,4 +50,4 @@ $(TARGET): $(OBJECTS)
 	$(CC) $(CFLAGS) $(SDL_CFLAGS) -c $< -o $@
 
 clean:
-	rm $(OBJECTS) $(TARGET)
+	rm -rf $(OBJECTS) $(TARGET)
