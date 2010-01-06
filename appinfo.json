@@ -1,0 +1,13 @@
+{
+       "title": "TetriCrisis",
+       "id": "org.webosinternals.tetricrisis",
+       "version": "5.9",
+       "vendor": "WebOS Internals",
+       "vendor_email": "support@webos-internals.org",
+       "type": "web",
+       "main": "index.html",
+       "icon": "icon.png",
+       "removable": "true",
+       "noWindow": true,
+       "noDeprecatedStyles": true
+}

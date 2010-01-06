@@ -1,4 +1,4 @@
-TARGET	= TetriCrisis
+TARGET	= tetricrisis
 
 VERSION	= 5.9
 

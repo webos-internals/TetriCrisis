@@ -1,0 +1,2 @@
+chdir /media/cryptofs/apps/usr/palm/applications/org.webosinternals.tetricrisis/bin
+exec  /media/cryptofs/apps/usr/palm/applications/org.webosinternals.tetricrisis/bin/tetricrisis &
