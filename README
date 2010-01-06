@@ -1,0 +1,26 @@
+TetriCrisis 100%[TM]
+Version 5.9 Remix
+By
+Silent Hero Productions(R)
+----------------------------------------
+
+Hi,
+
+Here is a small example of game Tetri$
+using SDL, SDL_ttf, SDL_mixer, and SDL_image.
+
+Sources are cross-platform and builds and runs
+on Windows and Linux.
+(use makefile to build on Linux)
+((MUST have SDL, SDL_ttf, SDL_mixer, SDL_image installed via Package Manager))
+
+
+Any problems then just email me at SLNTHERO@aol.com
+Enjoy!
+
+
+JeZ+Lee
+SLNTHERO@aol.com
+Silent Hero Productions(R)
+Video Game Design Studio
+www.SilentHeroProductions.com
