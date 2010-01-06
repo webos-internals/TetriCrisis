@@ -1,13 +1,11 @@
-# TetriCrisis 100%[TM] MAKEFILE by JeZ-l-Lee and mattmatteh
-
-TARGET	= TetriCrisis5.9Remix
+TARGET	= TetriCrisis
 
 VERSION	= 5.9
 
 DEL_FILE = rm -f
 
-CC       = g++
-CFLAGS   = -pipe -Wall -g
+CC       = $(CXX)
+CFLAGS   = -O2 -pipe -Wall -g
 
 SDL_CFLAGS	= `sdl-config --cflags`
 SDL_LIBS	= `sdl-config --libs`
@@ -38,6 +36,12 @@ HEADERS = src/Audio.h \
 	src/Settings.h \
 	src/Tetri.h \
 	src/Visuals.h
+	
+.PHONY:	all clean
+
+all: $(TARGET)
+
+fresh: clean all
 
 $(TARGET): $(OBJECTS)
 	$(CC) $(SDL_LIBS) $(SDL_MIXER_LIBS) $(SDL_TTF_LIBS) $(SDL_IMAGE_LIBS)$(OBJECTS) -o $@

@@ -2820,12 +2820,13 @@ Uint8 gameMode, rank;
 //-------------------------------------------------------------------------------------------------
 int main( int argc, char* args[] )
 {
-	if ( SDL_Init( SDL_INIT_EVERYTHING ) == -1 )
+	if ( SDL_Init( SDL_INIT_AUDIO | SDL_INIT_VIDEO | SDL_INIT_TIMER ) == -1 )
 	{
 		fprintf(stderr, "Could not initialize SDL: %s.\n", SDL_GetError());
 		return(-1);
 	}
 	else fprintf(stdout, "SDL (everything) initialized...\n");
+	atexit(SDL_Quit);
 
 	visuals = new Visuals();
 	game = new Game();
@@ -2842,7 +2843,7 @@ int main( int argc, char* args[] )
 
 	putenv(strdup("SDL_VIDEO_CENTERED=1"));
 
-	visuals->Screen = SDL_SetVideoMode(640, 640, 0, SDL_SWSURFACE);
+	visuals->Screen = SDL_SetVideoMode(640, 640, 16, SDL_SWSURFACE|SDL_ASYNCBLIT);
 	if ( visuals->Screen == NULL )
 	{
 		fprintf(stderr, "Couldn't set 640x640 video mode: %s\n", SDL_GetError());
